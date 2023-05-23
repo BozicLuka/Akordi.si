@@ -1,0 +1,173 @@
+li {
+    padding: 10px 0px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #444444;
+  --secondary-color: #F2F2F2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--secondary-color);
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+.navigation-bar {
+  background: white;
+  padding-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.navigation-bar .logo {
+  padding: 0.5em;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+.navigation-bar .logo span {
+  font-weight: bold;
+}
+
+.navigation-bar nav {
+  display: none;
+}
+
+.navigation-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navigation-bar .mobile-menu {
+  padding-right: 1.5em;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 9em 2em;
+}
+
+.hero {
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
+  padding: 0px 10%;
+}
+
+.projects {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.projects h1 {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.contact {
+  text-align: center;
+  padding: 0;
+}
+
+.contact .platforms {
+  letter-spacing: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 30%;
+  right: 0;
+  top: 0;
+  background: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.navigation {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  padding-top: 0.7em;
+  padding-right: 0.15em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+p {
+  line-height: 0.3em;
+}
+
+@media only screen and (min-width: 770px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navigation-bar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navigation-bar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+  }
+  .navigation-bar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation-bar nav a {
+    color: black;
+    font-size: 1em;
+    padding: .1em 1em;
+  }
+  .navigation-bar nav ul.navigation {
+    margin: 0;
+  }
+}
